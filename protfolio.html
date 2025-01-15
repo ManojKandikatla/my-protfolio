@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form element</title>
+    <link href="stylee.css">
+</head>
+<style>
+    section{
+        height:100vh;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: -10px;
+        margin-right: -15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+    }
+
+    *{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+    
+    header{
+        background-color: blueviolet;
+        margin:0px;
+        height:100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .button{
+        height: 50px;
+        width: 160px;
+        text-align:center;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+        
+    }
+    .button:hover{
+        color: white;
+        background-color:brown;
+    }
+
+   body{
+        background-color:#f0f8ff;
+        margin:0;
+    }
+    main{
+        padding: 20px;
+    }
+    header h1{
+        color: white;
+        text-align: center;
+        
+    }
+    h1{
+        color:blueviolet;
+        font-size: 50px;
+        
+    }
+    .submit{
+        height: 50px;
+        width: 160px;
+        background-color:brown;
+        border-radius: 10px;
+        border-color: #f0f8ff;
+        color: white;
+        
+        
+    }
+    
+    .submit:hover{      
+        background-color:rgb(126, 3, 3);
+        cursor: pointer;
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        height: 25px;
+    }
+    footer{
+        height: 200px;
+        background-color: black;
+        color: lightgray;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form div{
+        margin: 3px 0;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    img{
+        height: 600px;
+        width: 300px;
+    } 
+    
+    .fixed{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color:brown;
+        border-radius:50px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        height: 70px;
+        width: 70px;
+
+    }
+
+</style>
+<body>
+    <header><br>
+        <h1>Welcome to my protfolio</h1>
+        <div>
+    
+            <a href="#about">
+                <button class="button">
+                    About
+                </button>
+            </a>
+            
+            <a href="#contact">
+                <button class="button">
+                    contact
+                </button>
+            </a>
+        
+            <a href="#skills">
+                <button class="button">
+                    skills
+                </button>
+            </a>
+        
+            <a href="#projects">
+                <button class="button">
+                    projects
+                </button>
+            </a><br><br>
+        </div>
+    </header>
+
+    <main>
+            <section id="about">
+                <h1 >This is ManojKumar</h1>
+        
+                <img src="IMG-20241212-WA0013.jpg" alt="my photo is here."><br>
+                <h2>Hi this is manoj,i completed my first protfolio...!</h2>
+            </section>
+        <section id="skills">
+    
+            <h1>My Skills:</h1>
+            <ol>
+                <li>python</li>
+                <li>Basics of HTML</li>
+                <li>Basics of CSS</li>
+            </ol>
+        </section>
+        <section id="projects">
+            <h1>
+                projects:
+            </h1>
+            <table border=" " style="margin:20px;text-align: center;">
+                <!--colspan is used to add table data into one column-->
+                <!--rowspan is used to add table data into one row-->
+                <tr>
+                    <th rowspan="1">PROJECTS</th>
+                    <th>DISCRIPTION</th>
+            
+                </tr>
+                <tr>
+                    <td>MY PROTFOLIO</td>
+                    <td>I did my first protfolio on 14/01/2025 </td>
+                
+                </tr>
+                <tr>
+                    <td>PYTHON PROJECT</td>
+                    <td>Tic tac toe</td>
+               
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h1>
+                contact details:
+            </h1>
+        
+            <p>Fell free to give your contact details:</p>
+            <form action="">
+
+                <div>
+                <label for="name">Name:</label>
+                <input type="text"><br><br>
+                </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email"><br><br>
+            </div>
+            <div>
+                <b>Choose your gender</b>
+                <input type="radio" id="male" value="male">
+                <lable for="male" >Male</lable>
+            
+                <input type="radio" id="female" value="female">
+                <lable for="female">Female</lable>
+                <br>
+            </div>
+            <div>
+                <b>Choose your intrests</b>
+                <input type="checkbox" id="coding" value="coding">
+                <lable for="coding">Coding</lable>
+    
+                <input type="checkbox" id="reading" value="reading">
+                <lable for="reading">Reading</lable>
+                <br><br>
+            </div>
+            <div>
+                <lable for="bio">Bio (up to 200 characters)</lable>
+                <input type="text">
+                <br><br>
+            
+                <a href="">
+                <button class="submit">Submit</button>
+                </a><br><br>
+            </div>
+            </form> 
+        </section>  
+    </main>
+
+    <a href="">
+        <button class="fixed">TOP</button>
+    </a>
+    <footer>
+       <p>@ 2025 my protfolio</p>
+    </footer>
+</body>
+</html>
